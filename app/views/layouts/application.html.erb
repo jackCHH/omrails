@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Omrails</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+	<head>
+	  <title>Omrails</title>
+	  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+	  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+	  <%= csrf_meta_tags %>
+	</head>
 
-<%= yield %>
-
-</body>
+	<body>
+		<div class = "container">
+			<!---render header partial from layouts/header-->
+			<%= render "layouts/header" %>
+			<%= yield %>
+			<!---render footer partial from layouts/header-->
+			<%= render "layouts/footer" %>
+		</div>
+	</body>
 </html>

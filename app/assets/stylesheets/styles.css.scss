@@ -1,0 +1,28 @@
+$baseFontFamily: RaleWay;
+@import url(http://fonts.googleapis.com/css?family=Raleway:600);
+
+@import "bootstrap";
+@import "bootstrap-responsive";
+
+#header{
+	font-size: 3em;
+	font-family: $baseFontFamily;
+}
+
+.footer{
+	margin-top: 50px;
+	color: gray;
+}
+
+.text-center {
+	font-size: 2em;
+
+	p:nth-child(2){
+		margin-top: 50px;
+	}
+
+}
+
+.nav{
+	font-size: 16px;
+}
