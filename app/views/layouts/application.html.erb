@@ -9,6 +9,10 @@
 
 	<body>
 		<div class = "container">
+			<!---require for devise setup step 3-->
+			<% flash.each do |name, msg| %>
+				<%= content_tag(:div, msg, class: "alert alert-#{name}") %>
+			<%end%>
 			<!---render header partial from layouts/header-->
 			<%= render "layouts/header" %>
 			<%= yield %>

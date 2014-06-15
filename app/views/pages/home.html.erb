@@ -1,11 +1,16 @@
-	<div class = "jumbotron">
-		<h1 id = "header" class = "page-header">Welcome to One Month Rails</h1>
+	<h1 id = "header" class = "page-header">Welcome to One Month Rails</h1>
+	<% if user_signed_in?%>
+		<div class = "text-center">
+			<h1>Hello, world! You're Logged in !!</1>
+		</div>
+	<%else%>
 		<div class = "text-center">
 			<p>
 				You've found the home page!! Here is a link to <%= link_to "Google", "http://www.google.com"%> 
 			</p>
 			<p>
-				<%= link_to "Sign Up Now!", "#", class:"btn btn-success btn-large" %>
+				<!---new_user_registration_path is by devise.-->
+				<%= link_to "Sign Up Now!", new_user_registration_path, class:"btn btn-success btn-large" %>
 			</p>
 		</div>	
-	</div>
+	<%end %>
