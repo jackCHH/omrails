@@ -1,5 +1,5 @@
-<h1>Listing pins</h1>
-
+<!--<h1>Listing pins</h1>
+commented out table display to incoporate jquery masonry
 <table class = "table table-striped">
   <thead>
     <tr>
@@ -9,14 +9,19 @@
       <th></th>
       <th></th>
     </tr>
-  </thead>
+  </thead
 
   <tbody>
-    <!---we can call @pins because we defined it in our Pins controller-->
-    <%= render @pins %>
+    we can call @pins because we defined it in our Pins controller
+    %= render @pins %>
   </tbody>
 </table>
 
 <br>
 
-<%= link_to 'New Pin', new_pin_path %>
+%= link_to 'New Pin', new_pin_path %>-->
+
+<!---starting implementation of jquery masonry-->
+<div id = "pins">
+  <%= render @pins%>
+</div>

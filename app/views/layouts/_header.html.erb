@@ -6,6 +6,7 @@
 		<!---must add method: :delete when introducing a logging out button-->
 		<li class = "pull-right"><%= link_to "Logout",  destroy_user_session_path, method: :delete %></li>
 		<li class = "pull-right"><%= link_to "Edit",  edit_user_registration_path%></li>
+		<li class = "pull-right"><%= link_to "Add Pin",  new_pin_path%></li>
 	<% else %>
 		<li class = "pull-right"><%= link_to "Login",  new_user_session_path %></li>
 	<% end %>
