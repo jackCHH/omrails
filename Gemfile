@@ -35,3 +35,5 @@ end
 
 gem "devise"
 gem "simple_form"
+#gem "paperclip", github: "thoughtbot/paperclip"
+gem "paperclip", "~> 3.5.3"
